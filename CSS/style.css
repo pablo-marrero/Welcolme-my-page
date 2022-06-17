@@ -1,0 +1,237 @@
+*{margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	}
+
+body{font-family: 'ebrima';
+	font-size: 16px;
+	background-color: white;
+	}
+
+
+/************** COMIENZA EL HEADER **************/
+
+.contenedor{width: 90%; max-width: 1000px;
+			margin: auto;
+			overflow: hidden;
+			}
+
+.menu{display: flex;
+		justify-content: flex-end;}
+
+header{width: 100%;
+	    height: 700px;
+		background-image: url('../image/imagen7.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: bottom;}
+
+
+div.contenedor a{margin-top: 3%;margin-right: 5%;
+				text-decoration: none;
+				color: white;
+				}
+
+div.contenedor a:visited{
+	color:white;
+}
+
+div.contenedor a:active{
+	color:white;
+}
+
+.contieneH{margin-top: 10%;
+		   display: flex;
+		   flex-direction: column;
+		   align-items: center;
+		   color: white;
+		   font-size: 2em;}
+
+.contieneH h1{font-size: 3em}
+
+.contieneH h2{text-align: center;}
+
+div.contieneH div{width: 70%;
+					display:flex;
+					justify-content: center;}
+
+div.contieneH input{display: flex;
+					justify-content: space-around;
+					margin: 5% 10%;
+					padding: 2% 8%;
+					border-radius: 20px;
+					font-size: 15px;
+					color: white;
+					font-weight: bold;
+					font-family: arial;
+					background-color: #b3afb0;
+					border:none;}
+
+div.contieneH input:hover{
+	background-color: red;
+	opacity: .6;
+}
+/************** TERMINA EL HEADER **************/
+
+
+/************** COMIENZA EL MAIN **************/
+
+/****** SECCION UNO ******/
+section.acercaDe{background-color: #eaeaea;
+				 text-align: center;
+				 padding: 4%}
+
+
+section.acercaDe h2{padding-bottom: 2%;
+					font-size: 24px;
+					font-weight: bold;
+					color: #999990;}
+
+
+section.acercaDe p{font-weight: 600; 
+				   color:#999990;
+				   margin-bottom: 2%;
+				   }
+
+
+/****** SECCION DOS ******/
+
+section.imagenes{background-color: white;
+				 padding: 5% 0;
+				 text-align: center;}
+
+
+.imagenes-grupal{display: flex;
+				 justify-content: space-between;
+				 }
+
+.imagenes-individual{
+					 width: 33%;
+					 }
+
+
+.imagenes-individual>h3{font-size: 20px;
+						font-weight: 600;
+						}
+
+.imagenes-individual p{font-size: 14px;
+						font-weight: 500;
+						padding-top: 5%}
+
+
+/****** SECCION TRES GALERIA DE IMAGENES ******/
+section.galeria{background-color: #eaeaea;
+				text-align: center;
+				}
+
+section.galeria h3{padding-top: 4%; padding-bottom: 2%}
+
+section.galeria p{margin-bottom: 2%}
+
+.galeria-imagenes{display: flex;
+				  flex-wrap: wrap;
+				  justify-content: space-around;
+				  margin-bottom: 5%;
+				  }
+
+.galeria-imagenes img{width: 30%;
+				 	  margin:1%;
+				 	  border-radius: 5px;
+				 	 }
+
+.galeria-imagenes img:hover{
+	opacity: .6
+}
+
+
+/****** FOOTER ******/
+.footer{background-image: url("../image/footer.png");
+		display: flex;
+		flex-direction: column;
+		
+		}
+
+.footer h2{font-weight: 900;
+		   font-size: 30px;
+		   color: white;
+			margin: 3% 0 1% 0;
+		    text-align: center;}
+		
+
+.footer p {margin: 0 0 3% 0%;
+		   text-align: center;
+			color: white;}
+
+
+.datos {display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 2%;}
+
+.datos input, textarea{width: 50%;
+			 height: 40px;
+			 background: none;
+			 margin-bottom: 3%;
+			font-family: 'ebrima';
+			padding: 15px 15px;
+			border-radius: 3px;
+			font-size: 15px;
+			font-weight: 400;
+			}
+
+.datos textarea{height:100px;
+				resize: none;
+				margin-bottom: 1%;}
+
+
+.boton-contacto{width: 73%;
+				display: flex;
+				justify-content: flex-end;
+				}
+
+.boton-contacto input{width: 90px;
+					  padding: 1%;
+					  background: none;
+					  border-radius: 5px;
+					  margin-bottom: 5%;
+					  color:white;
+					  }
+
+
+
+@media(max-width: 768px){
+	header{
+		 height: 600px;
+	}
+	.contieneH h1{font-size: 2em;}
+	.contieneH h2{font-size: 1em;}
+}
+
+
+@media(max-width: 425px){
+	div.contieneH div{
+		flex-direction: column;
+		align-items: center;
+		margin-top: 8%;
+	}
+	div.contieneH input{
+		margin: 8% 10%;
+		padding: 4% 8%;
+	}
+
+	.imagenes-grupal{display: flex;
+		flex-direction: column
+	}
+	.imagenes-individual{
+		width: 80%;
+		margin: auto;	
+	}
+
+	.galeria-imagenes img{width: 45%;
+	   }
+
+	.datos input, textarea{
+		width: 80%;
+	}
+}
